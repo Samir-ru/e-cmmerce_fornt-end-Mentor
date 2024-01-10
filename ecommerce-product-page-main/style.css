@@ -30,11 +30,19 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 50%;
+
+
 }
 
 .navigations ul a{
     text-decoration: none;
     color: hsl(219, 9%, 45%);
+    transition: all 0.3s ease-in;
+    display: block;
+}
+
+.navigations ul a:hover{
+    transform: translateY(-10px);
 }
 
 .btn{
@@ -62,4 +70,123 @@ hr{
     border: none;
     background-color: hsl(220, 14%, 75%);
     height: 0.5px;
+}
+
+.mainContent{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+.mainImg{
+    height: 350px;
+    width: 350px;
+    background-image: url("images/image-product-1.jpg");
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.otherImgs{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.small{
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.left, .right{
+    width: 40%;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Cname{
+    font-size: 15px;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: hsl(219, 9%, 45%);
+}
+
+.discount{
+    font-size: 14px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsla(26, 100%, 55%, 0.165);
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.pPrice{
+    font-size: 15px;
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 15px;
+}
+.addBtns{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.plusMinus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    background-color: hsla(220, 14%, 75%, 0.12);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.quantity{
+    font-weight: 700;
+}
+#addToCart{
+    width: 60%;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+#p, #m{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+}
+
+.price{
+    margin-top: 15px;
+
 }
