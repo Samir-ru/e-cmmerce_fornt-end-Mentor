@@ -1,78 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-<nav>
-  <div class="navigations">
-    <ul class="logo"><h1>sneakers</h1></ul>
-    <ul><a href="#">Collection</a></ul>
-    <ul><a href="#">Men</a></ul>
-    <ul><a href="#">Women</a></ul>
-    <ul><a href="#">About</a></ul>
-    <ul><a href="#">Contact</a></ul>
-  </div>
-  <div class="top_btns">
-    <button id="cart" class="btn"><img src="images/icon-cart.svg" alt="cart"></button>
-    <button id="profile" class="btn"><img src="images/image-avatar.png" alt="Avatar"></button>
-  </div>
-</nav>
-<hr>
-<div class="mainContent">
-  <div class="left">
-    <div class="mainImg">
+  <nav>
+    <div class="navigations">
+      <ul class="logo">
+        <h1>sneakers</h1>
+      </ul>
+      <ul><a href="#">Collection</a></ul>
+      <ul><a href="#">Men</a></ul>
+      <ul><a href="#">Women</a></ul>
+      <ul><a href="#">About</a></ul>
+      <ul><a href="#">Contact</a></ul>
     </div>
-    <div class="otherImgs">
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
+    <div class="top_btns">
+      <button id="cart" class="btn"><img src="images/icon-cart.svg" alt="cart"></button>
+      <button id="profile" class="btn"><img src="images/image-avatar.png" alt="Avatar"></button>
     </div>
-  </div>
-  <div class="right">
-    <div class="text">
-      <p class="Cname">SNEAKER COMPANY</p>
-      <h1 class="title">Fall Limited Edition sneakers</h1>
-      <p class="description">
-        These low-profile sneaders are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything 
-        the weather can offer.
-      </p>
-      <h3 class ="price">$125.00 <span class="discount">50%</span></h3>
-      <p class="pPrice"><strike>$250.00</strike></p>
-    </div>
-    <div class="addBtns">
-      <div class="plusMinus">
-        <button id="m">-</button>
-        <p class="quantity">0</p>
-        <button id="p">+</button>
+  </nav>
+  <hr>
+  <div class="mainContent">
+    <div class="left">
+      <div class="mainImg">
       </div>
-      <button id="addToCart">
-        <img src="images/icon-cart.svg" alt="" class="cartIcon">Add to cart
-        </svg>
-      </button>
+      <div class="otherImgs">
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+      </div>
     </div>
-  
+    <div class="right">
+      <div class="text">
+        <p class="Cname">SNEAKER COMPANY</p>
+        <h1 class="title">Fall Limited Edition sneakers</h1>
+        <p class="description">
+          These low-profile sneaders are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <h3 class="price">$125.00 <span class="discount">50%</span></h3>
+        <p class="pPrice"><strike>$250.00</strike></p>
+      </div>
+      <div class="addBtns">
+        <div class="plusMinus">
+          <button id="m" onclick="minus()">-</button>
+          <p id="quantity">0</p>
+          <button id="p" onclick="plus()">+</button>
+        </div>
+        <button id="addToCart">
+          <img src="images/icon-cart.svg" alt="" class="cartIcon">Add to cart
+          </svg>
+        </button>
+      </div>
+
+    </div>
   </div>
-</div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
